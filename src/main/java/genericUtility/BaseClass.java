@@ -6,24 +6,19 @@ import java.time.Duration;
 import java.util.Properties;
 
 import org.apache.commons.lang3.RandomStringUtils;
-import org.apache.logging.log4j.Logger; //log4j
 import org.apache.logging.log4j.LogManager; //log4j
-import org.openqa.selenium.By;
+import org.apache.logging.log4j.Logger; //log4j
 import org.openqa.selenium.Platform;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chromium.ChromiumDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
-
-import elementRepository.HomePage;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Parameters;
 
 public class BaseClass {
 	
@@ -63,8 +58,12 @@ public class BaseClass {
     		case "firefox": capabilities.setBrowserName("Microsoftedge"); break;
     		default: System.out.println("no matching browser"); return; 
     		}
-    		    
-    		driver=new RemoteWebDriver(new URL("http://192.168.142.1:4444/wd/hub"),capabilities);
+    		ChromeOptions options = new ChromeOptions();
+    		options.addArguments("--headless=new"); // Runs without visual screen dependencies
+    		options.addArguments("--remote-allow-origins=*");
+    		options.addArguments("--window-size=1920,1080");
+    		WebDriver driver = new ChromeDriver(options);   
+    		//driver=new RemoteWebDriver(new URL("http://192.168.142.1:4444/wd/hub"),capabilities);
     	}
     	
     
