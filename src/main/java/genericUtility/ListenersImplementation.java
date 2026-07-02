@@ -99,13 +99,13 @@ public class ListenersImplementation implements ITestListener {
 		String pathOFExtentReport = System.getProperty("user.dir")+"\\reports\\"+repname; 
 		File extentReport=new File(pathOFExtentReport);
 		
-		try {
+		/*try {
 			Desktop.getDesktop().browse(extentReport.toURI());
 			
 		}
 		catch(IOException e){
 			e.printStackTrace(); 
-		}
+		}*/
 	}
 	
 	

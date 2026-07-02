@@ -1,0 +1,5 @@
+testCases\TC001_AccountRegistrationTest.class
+testCases\TC003_LoginDDT.class
+testCases\TC004_Search.class
+testCases\package-info.class
+testCases\TC002_LoginTest.class

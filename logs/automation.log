@@ -1,3 +1,17 @@
 14:57:25.274 [main] %5-level testCases.TC001_AccountRegistrationTest - Test failed..
 14:57:25.279 [main] %5-level testCases.TC001_AccountRegistrationTest - Debug logs..
 14:57:26.864 [main] %5-level testCases.TC002_LoginTest - ***8starting TC002_LoginTest****
+15:01:01.029 [main] %5-level org.testng.TestNG - suiteXmlPath: "D:\Selenium-ms\Opencart121\master.xml"
+15:01:03.263 [main] %5-level testCases.TC001_AccountRegistrationTest - ***Starting TC001_AccountRegistrationTest*****
+15:01:43.324 [main] %5-level testCases.TC001_AccountRegistrationTest - Test failed..
+15:01:43.325 [main] %5-level testCases.TC001_AccountRegistrationTest - Debug logs..
+15:01:44.836 [main] %5-level testCases.TC002_LoginTest - ***8starting TC002_LoginTest****
+15:20:05.128 [main] %5-level org.testng.TestNG - suiteXmlPath: "D:\Selenium-ms\Opencart121\master.xml"
+15:20:22.599 [main] %5-level testCases.TC001_AccountRegistrationTest - ***Starting TC001_AccountRegistrationTest*****
+15:20:22.771 [main] %5-level testCases.TC001_AccountRegistrationTest -  clicked on My Account link 
+15:20:23.529 [main] %5-level testCases.TC001_AccountRegistrationTest -  clicked on Register link 
+15:20:23.533 [main] %5-level testCases.TC001_AccountRegistrationTest -  Providing Customer details 
+15:20:27.417 [main] %5-level testCases.TC001_AccountRegistrationTest -  Validating expected message 
+15:20:27.449 [main] %5-level testCases.TC001_AccountRegistrationTest - *********TC001_AccountRegistrationTest end****************
+15:20:29.501 [main] %5-level testCases.TC002_LoginTest - ***8starting TC002_LoginTest****
+15:20:30.654 [main] %5-level testCases.TC002_LoginTest - ***finished TC002_LoginTest****
